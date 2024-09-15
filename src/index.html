@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundraiser DApp</title>
+  
+</head>
+
+<body>
+  
+  <div>
+    <h1>Fundraiser DApp</h1>
+
+    <!-- Connect Metamask -->
+    <button id="connectWallet">Connect Wallet</button>
+    <p id="walletAddress">Wallet not connected</p>
+
+    <!-- Donor Registration Form -->
+    <h2>Donor Registration</h2>
+    <form id="donorRegistrationForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+      <label for="mobileNum">Mobile Number:</label>
+      <input type="text" id="mobileNum" required />
+      <button type="submit">Register Donor</button>
+    </form>
+
+    <!-- Donation Form -->
+    <h2>Make a Donation</h2>
+    <form id="donationForm">
+      <label for="mobile">Registered Mobile Number:</label>
+      <input type="text" id="mobile" required />
+      <label for="fundZone">Fund Zone:</label>
+      <input type="text" id="fundZone" required />
+      <button type="submit">Donate</button>
+    </form>
+
+    <!-- Donation Amounts -->
+    <h2>Donation Amounts</h2>
+    <button id="getDonations">Get Total Donations</button>
+    <p id="donationsInfo"></p>
+
+    <!-- Custom app.js file after web3.js -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.9.1/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+  </div>
+
+</body>
+</html>
